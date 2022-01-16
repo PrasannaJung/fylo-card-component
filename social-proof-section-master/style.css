@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--white);
+  padding: 4rem 3rem;
+  background: url("images/bg-pattern-top-mobile.svg"),
+    url("images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: auto, bottom left;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  margin-bottom: 1.8rem;
+}
+
+.head-para {
+  font-weight: 400;
+  color: var(--dark-grayish-magenta);
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
+
+.stars {
+  margin: 1.2rem 0 0.7rem;
+  padding-top: 1.2rem;
+}
+
+.rating-card {
+  background-color: var(--light-grayish-magenta);
+  font-size: 1.5rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  padding: 0rem 0 1.3rem;
+}
+
+.user img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.username {
+  margin-bottom: 0.3rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.handle {
+  color: var(--soft-pink);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.user-card {
+  background-color: var(--very-dark-magenta);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+}
+
+.user-para {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--light-grayish-magenta);
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-repeat: no-repeat;
+    background-position: auto, bottom left;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-heading {
+    font-size: 4rem;
+  }
+
+  .container {
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .cards {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .rc2 {
+    position: relative;
+    left: 3.5rem;
+  }
+  .rc3 {
+    position: relative;
+    left: 7rem;
+  }
+
+  .uc2 {
+    position: relative;
+    top: 2rem;
+  }
+
+  .uc3 {
+    position: relative;
+    top: 4rem;
+  }
+}
